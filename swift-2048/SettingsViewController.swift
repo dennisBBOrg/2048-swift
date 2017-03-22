@@ -15,11 +15,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         
         initializeSettings()
-
-        // NOTE: I set deployment target to 10.0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (_) in
-            self.getSettings()
-        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +36,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
-        cell?.textLabel?.text = getInt()
+        cell?.textLabel?.text = "Hello"
         
         return cell!
     }
