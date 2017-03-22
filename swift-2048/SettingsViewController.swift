@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 
         // NOTE: I set deployment target to 10.0
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { (_) in
-            self.getSettings()
+            self.getSettings(
         }
     }
     
